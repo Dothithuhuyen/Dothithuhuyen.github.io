@@ -1,0 +1,21 @@
+// 1. Nhập số A
+let inputA = prompt("Enter number A");
+let numA = parseFloat(inputA);
+
+// Kiểm tra định dạng số A
+if (inputA === null || inputA.trim() === "" || isNaN(numA)) {
+    alert("Number A is formatted incorrect");
+} else {
+    // 2. Nhập số B
+    let inputB = prompt("Enter number B");
+    let numB = parseFloat(inputB);
+
+    // Kiểm tra định dạng số B
+    if (inputB === null || inputB.trim() === "" || isNaN(numB)) {
+        alert("Number B is formatted incorrect");
+    } else {
+        // 3. Tính toán và hiển thị kết quả
+        let sum = numA + numB;
+        alert("Result:\n" + numA + " + " + numB + " = " + sum);
+    }
+}
